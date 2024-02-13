@@ -1,0 +1,14 @@
+diff --git a/Capacitor/Capacitor/WebViewAssetHandler.swift b/Capacitor/Capacitor/WebViewAssetHandler.swift
+index 6dce404ef91bce5a4630dcec99481e8e4e3d6950..44e415d8e494bb2770319133eccd010b31eebb46 100644
+--- a/Capacitor/Capacitor/WebViewAssetHandler.swift
++++ b/Capacitor/Capacitor/WebViewAssetHandler.swift
+@@ -37,8 +37,7 @@ internal class WebViewAssetHandler: NSObject, WKURLSchemeHandler {
+                 "Cache-Control": "no-cache"
+             ]
+             if let rangeString = urlSchemeTask.request.value(forHTTPHeaderField: "Range"),
+-               let totalSize = try fileUrl.resourceValues(forKeys: [.fileSizeKey]).fileSize,
+-               isMediaExtension(pathExtension: url.pathExtension) {
++               let totalSize = try fileUrl.resourceValues(forKeys: [.fileSizeKey]).fileSize{
+                 let fileHandle = try FileHandle(forReadingFrom: fileUrl)
+                 let parts = rangeString.components(separatedBy: "=")
+                 let streamParts = parts[1].components(separatedBy: "-")

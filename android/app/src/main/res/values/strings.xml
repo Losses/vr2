@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">VR2</string>
+    <string name="title_activity_main">VR2</string>
+    <string name="package_name">one.roriri.vr2</string>
+    <string name="custom_url_scheme">one.roriri.vr2</string>
+</resources>

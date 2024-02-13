@@ -1,0 +1,17 @@
+diff --git a/ios/Plugin/BrowserPlugin.swift b/ios/Plugin/BrowserPlugin.swift
+index f6be40dd72cdd1ced0fe43869d26d9188ca08ea8..9ad9c32fa66dc294b1b57dfe0c1b42b2770ca1a2 100644
+--- a/ios/Plugin/BrowserPlugin.swift
++++ b/ios/Plugin/BrowserPlugin.swift
+@@ -28,11 +28,7 @@ public class CAPBrowserPlugin: CAPPlugin {
+         // display
+         DispatchQueue.main.async { [weak self] in
+             if style == .popover {
+-                if let width = call.getInt("width"), let height = call.getInt("height") {
+-                    self?.setCenteredPopover(viewController, size: CGSize.init(width: width, height: height))
+-                } else {
+-                    self?.setCenteredPopover(viewController)
+-                }
++                self?.setCenteredPopover(viewController)
+             }
+             self?.bridge?.presentVC(viewController, animated: true, completion: {
+                 call.resolve()

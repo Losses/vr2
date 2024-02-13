@@ -1,0 +1,11 @@
+diff --git a/android-build.gradle b/android-build.gradle
+index 317ddcb41a6b476392a56e1497d513353f6d523d..f3bdd7e4fcdc5b9fc7bc18eff48804df0d9197c9 100644
+--- a/android-build.gradle
++++ b/android-build.gradle
+@@ -3,5 +3,5 @@ repositories {
+ }
+ 
+ dependencies {
+-    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
++    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+ }
