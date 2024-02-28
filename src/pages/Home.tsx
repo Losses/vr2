@@ -39,6 +39,13 @@ const Home: React.FC = () => {
     ctxRef.current = ctx;
   }
 
+  const syncPlaying = React.useCallback(() => {
+    const x =playing(videoRef.current);
+    setIsPlaying(x);
+
+    return x;
+  }, []);
+
   const metaPaint = React.useCallback(() => {
     if (ctxRef.current && fileUrl && videoRef.current) {
       paint(videoRef.current, ctxRef.current);
@@ -97,7 +104,7 @@ const Home: React.FC = () => {
         return newUrl;
       });
 
-      setIsPlaying(false);
+      syncPlaying();
 
       x.currentTarget.value = "";
       switchScreen("player");
@@ -186,14 +193,16 @@ const Home: React.FC = () => {
   }, []);
 
   const handleCanvasClick = React.useCallback(() => {
-    if (playing(videoRef.current)) {
+    const x = syncPlaying();
+
+    if (x) {
       videoRef.current?.pause();
-      setIsPlaying(true);
     } else {
       videoRef.current?.play();
-      setIsPlaying(false);
     }
   }, []);
+
+  console.log(isPlaying);
 
   return (
     <div>

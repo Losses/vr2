@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const Loading = () => {
+export const Loading = React.memo(() => {
   return (
     <div className="lds-grid">
       <div></div>
@@ -14,4 +14,4 @@ export const Loading = () => {
       <div></div>
     </div>
   );
-};
+});
