@@ -1,6 +1,5 @@
 {
-  "name": "ionic-app-base",
-  "private": true,
+  "name": "vr2",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -23,11 +22,15 @@
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
     "@web-media/capacitor-geckoview": "^2.0.0",
+    "classnames": "^2.5.1",
     "ionicons": "^7.0.0",
+    "plyr": "^3.7.8",
+    "plyr-react": "^5.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^5.3.4",
-    "react-router-dom": "^5.3.4"
+    "react-router-dom": "^5.3.4",
+    "use-constant": "^1.1.1"
   },
   "devDependencies": {
     "@capacitor/cli": "5.7.0",

@@ -1790,9 +1790,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/cli@patch:@ionic/cli@npm:^7.2.0#.yarn/patches/@ionic-cli-npm-6.20.1-53fb01ed2a.patch::locator=ionic-app-base%40workspace%3A.":
+"@ionic/cli@patch:@ionic/cli@npm:^7.2.0#.yarn/patches/@ionic-cli-npm-6.20.1-53fb01ed2a.patch::locator=vr2%40workspace%3A.":
   version: 7.2.0
-  resolution: "@ionic/cli@patch:@ionic/cli@npm%3A7.2.0#.yarn/patches/@ionic-cli-npm-6.20.1-53fb01ed2a.patch::version=7.2.0&hash=983364&locator=ionic-app-base%40workspace%3A."
+  resolution: "@ionic/cli@patch:@ionic/cli@npm%3A7.2.0#.yarn/patches/@ionic-cli-npm-6.20.1-53fb01ed2a.patch::version=7.2.0&hash=983364&locator=vr2%40workspace%3A."
   dependencies:
     "@ionic/cli-framework": "npm:6.0.1"
     "@ionic/cli-framework-output": "npm:2.2.8"
@@ -3370,6 +3370,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"classnames@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "classnames@npm:2.5.1"
+  checksum: 10c0/afff4f77e62cea2d79c39962980bf316bacb0d7c49e13a21adaadb9221e1c6b9d3cdb829d8bb1b23c406f4e740507f37e1dcf506f7e3b7113d17c5bab787aa69
+  languageName: node
+  linkType: hard
+
 "clean-stack@npm:^2.0.0":
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
@@ -3529,6 +3536,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:^3.26.1":
+  version: 3.36.0
+  resolution: "core-js@npm:3.36.0"
+  checksum: 10c0/62dcb41ba79ead581e4c5b2740ae18bfe6ee230e853893736d16edb01b580574d8645ff6c5513d1c75d59620f8451aee45c119d3c4f5ebc66cff5f003a816864
+  languageName: node
+  linkType: hard
+
 "core-js@npm:^3.35.0":
   version: 3.35.1
   resolution: "core-js@npm:3.35.1"
@@ -3581,6 +3595,13 @@ __metadata:
   version: 3.1.3
   resolution: "csstype@npm:3.1.3"
   checksum: 10c0/80c089d6f7e0c5b2bd83cf0539ab41474198579584fa10d86d0cafe0642202343cbc119e076a0b1aece191989477081415d66c9fefbf3c957fc2fc4b7009f248
+  languageName: node
+  linkType: hard
+
+"custom-event-polyfill@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "custom-event-polyfill@npm:1.0.7"
+  checksum: 10c0/b73c90d646d78f4acdff5453fa0f165f6d5506e32d074ca57d27f2bb7d9412356dab8cec7c00a0956b069e4987a8546a2c2c4b866d155e9fc4c27d223a225b78
   languageName: node
   linkType: hard
 
@@ -5210,47 +5231,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ionic-app-base@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "ionic-app-base@workspace:."
-  dependencies:
-    "@capacitor/android": "npm:5.7.0"
-    "@capacitor/app": "npm:5.0.7"
-    "@capacitor/cli": "npm:5.7.0"
-    "@capacitor/core": "npm:5.7.0"
-    "@capacitor/haptics": "npm:5.0.7"
-    "@capacitor/keyboard": "npm:5.0.8"
-    "@capacitor/status-bar": "npm:5.0.7"
-    "@ionic/cli": "npm:^7.2.0"
-    "@ionic/react": "npm:^7.0.0"
-    "@ionic/react-router": "npm:^7.0.0"
-    "@testing-library/dom": "npm:>=7.21.4"
-    "@testing-library/jest-dom": "npm:^5.16.5"
-    "@testing-library/react": "npm:^14.0.0"
-    "@testing-library/user-event": "npm:^14.4.3"
-    "@types/react": "npm:^18.0.27"
-    "@types/react-dom": "npm:^18.0.10"
-    "@types/react-router": "npm:^5.1.20"
-    "@types/react-router-dom": "npm:^5.3.3"
-    "@vitejs/plugin-legacy": "npm:^5.0.0"
-    "@vitejs/plugin-react": "npm:^4.0.1"
-    "@web-media/capacitor-geckoview": "npm:^2.0.0"
-    cypress: "npm:^13.5.0"
-    eslint: "npm:^8.35.0"
-    eslint-plugin-react: "npm:^7.32.2"
-    ionicons: "npm:^7.0.0"
-    jsdom: "npm:^22.1.0"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    react-router: "npm:^5.3.4"
-    react-router-dom: "npm:^5.3.4"
-    terser: "npm:^5.4.0"
-    typescript: "npm:^5.1.6"
-    vite: "npm:^5.0.0"
-    vitest: "npm:^0.34.6"
-  languageName: unknown
-  linkType: soft
-
 "ionicons@npm:^7.0.0, ionicons@npm:^7.2.2":
   version: 7.2.2
   resolution: "ionicons@npm:7.2.2"
@@ -5947,6 +5927,13 @@ __metadata:
     enquirer:
       optional: true
   checksum: 10c0/8301703876ad6bf50cd769e9c1169c2aa435951d69d4f54fc202a13c1b6006a9b3afbcf9842440eb22f08beec4d311d365e31d4ed2e0fcabf198d8085b06a421
+  languageName: node
+  linkType: hard
+
+"loadjs@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "loadjs@npm:4.2.0"
+  checksum: 10c0/da0dff873148ca0507e84fd5b975f95a015f1cc30552df1958b6f47c9c0e134f29df5cc88db3fed72faade725ce3954378365bd0df2092117e432df430fa4c97
   languageName: node
   linkType: hard
 
@@ -6907,6 +6894,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"plyr-react@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "plyr-react@npm:5.3.0"
+  dependencies:
+    plyr: "npm:^3.7.7"
+    react-aptor: "npm:^2.0.0"
+  peerDependencies:
+    plyr: ^3.7.7
+    react: ">=16.8"
+  peerDependenciesMeta:
+    plyr:
+      optional: false
+    react:
+      optional: true
+  checksum: 10c0/b338c5f07277c124663aa4f820dffb0700a67ac6eab0015b77985bb70c308da96bdffff6d103033544de6516cade63027f4c077871a0fa0feba996dfd3b6f2c0
+  languageName: node
+  linkType: hard
+
+"plyr@npm:^3.7.7, plyr@npm:^3.7.8":
+  version: 3.7.8
+  resolution: "plyr@npm:3.7.8"
+  dependencies:
+    core-js: "npm:^3.26.1"
+    custom-event-polyfill: "npm:^1.0.7"
+    loadjs: "npm:^4.2.0"
+    rangetouch: "npm:^2.0.1"
+    url-polyfill: "npm:^1.1.12"
+  checksum: 10c0/75c3e070f7829f76409e0d34784bf8070b827ad99c4713a36338af7ce8dff7cf38998403f34a4a0b4d6e99efd1856ee056443c7e838db1dbb98ed38828110a97
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^8.4.35":
   version: 8.4.35
   resolution: "postcss@npm:8.4.35"
@@ -7089,6 +7107,25 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: 10c0/900a93d3cdae3acd7d16f642c29a642aea32c2026446151f0778c62ac089d4b8e6c986811076e1ae180a694cedf077d453a11b58ff0a865629a4f82ab558e102
+  languageName: node
+  linkType: hard
+
+"rangetouch@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "rangetouch@npm:2.0.1"
+  checksum: 10c0/5f7947d1c5e95f50630ed1e0cbaeb4c32a6be37b66d864a68f7e70a4e86f782eb869df9fa2357b981b1301d2158eff50002a199b0fbbbf6e1746bc9d213914d9
+  languageName: node
+  linkType: hard
+
+"react-aptor@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "react-aptor@npm:2.0.0"
+  peerDependencies:
+    react: ">=16.8"
+  peerDependenciesMeta:
+    react:
+      optional: true
+  checksum: 10c0/f2f00b494a2cb93b0ee73949d2031c2f5a8233d169c3d16792e7c6a5177a75310155e85282209a6f74883b3564d1f3a46d5d4d03ee1c16224fbdb5d5665504f8
   languageName: node
   linkType: hard
 
@@ -8522,6 +8559,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"url-polyfill@npm:^1.1.12":
+  version: 1.1.12
+  resolution: "url-polyfill@npm:1.1.12"
+  checksum: 10c0/69633c42e3182271d01d2f2f4acd889a9f54b88fd7b2f45fd84fed19eca7cfa98fb6bfbd43d9cd9fad222a11a2dffb562b8435cdaa67fca5e25e3da638741679
+  languageName: node
+  linkType: hard
+
+"use-constant@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "use-constant@npm:1.1.1"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/1da6951d19f6de6727794421b1a5888c4203702641e4be792fe1e979b63ee78130ee0f5e5527d9280ec4a1ce16d2a67f5f475558f779fa4a429403b7ecbdc75a
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:^1.0.1, util-deprecate@npm:~1.0.1":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
@@ -8671,6 +8724,51 @@ __metadata:
   checksum: 10c0/7b5e87875991a66fe5cca62477f21447d7cdf4d101ac381ca02a16f4223b1ae5d0bc17ce42616d6dc74742757730ed511ada05aaa7090b6075e304c883cf0bc3
   languageName: node
   linkType: hard
+
+"vr2@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "vr2@workspace:."
+  dependencies:
+    "@capacitor/android": "npm:5.7.0"
+    "@capacitor/app": "npm:5.0.7"
+    "@capacitor/cli": "npm:5.7.0"
+    "@capacitor/core": "npm:5.7.0"
+    "@capacitor/haptics": "npm:5.0.7"
+    "@capacitor/keyboard": "npm:5.0.8"
+    "@capacitor/status-bar": "npm:5.0.7"
+    "@ionic/cli": "npm:^7.2.0"
+    "@ionic/react": "npm:^7.0.0"
+    "@ionic/react-router": "npm:^7.0.0"
+    "@testing-library/dom": "npm:>=7.21.4"
+    "@testing-library/jest-dom": "npm:^5.16.5"
+    "@testing-library/react": "npm:^14.0.0"
+    "@testing-library/user-event": "npm:^14.4.3"
+    "@types/react": "npm:^18.0.27"
+    "@types/react-dom": "npm:^18.0.10"
+    "@types/react-router": "npm:^5.1.20"
+    "@types/react-router-dom": "npm:^5.3.3"
+    "@vitejs/plugin-legacy": "npm:^5.0.0"
+    "@vitejs/plugin-react": "npm:^4.0.1"
+    "@web-media/capacitor-geckoview": "npm:^2.0.0"
+    classnames: "npm:^2.5.1"
+    cypress: "npm:^13.5.0"
+    eslint: "npm:^8.35.0"
+    eslint-plugin-react: "npm:^7.32.2"
+    ionicons: "npm:^7.0.0"
+    jsdom: "npm:^22.1.0"
+    plyr: "npm:^3.7.8"
+    plyr-react: "npm:^5.3.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    react-router: "npm:^5.3.4"
+    react-router-dom: "npm:^5.3.4"
+    terser: "npm:^5.4.0"
+    typescript: "npm:^5.1.6"
+    use-constant: "npm:^1.1.1"
+    vite: "npm:^5.0.0"
+    vitest: "npm:^0.34.6"
+  languageName: unknown
+  linkType: soft
 
 "w3c-xmlserializer@npm:^4.0.0":
   version: 4.0.0
