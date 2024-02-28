@@ -50,7 +50,6 @@
     "vitest": "^0.34.6"
   },
   "resolutions": {
-    "@capacitor/android": "npm:@web-media/capacitor-geckoview@3.0.0",
     "@ionic/cli": "patch:@ionic/cli@npm:^7.2.0#.yarn/patches/@ionic-cli-npm-6.20.1-53fb01ed2a.patch"
   }
 }

@@ -1355,12 +1355,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@capacitor/android@npm:@web-media/capacitor-geckoview@3.0.0":
-  version: 3.0.0
-  resolution: "@web-media/capacitor-geckoview@npm:3.0.0"
+"@capacitor/android@npm:5.7.0":
+  version: 5.7.0
+  resolution: "@capacitor/android@npm:5.7.0"
   peerDependencies:
     "@capacitor/core": ^5.7.0
-  checksum: 10c0/7daaff71a85f7d1a97634c4cf7665237fb4eb4ac68e4ae0ce634eae60679474b98fef01d0a1ccc62167f7077e689aef264e09d48079a18802440c39023a15a22
+  checksum: 10c0/3eab2690dc94bee0f59c1318985b9a91edf3aad057b6ed58f8abc8021f2391a01394536453aeb352e4db5bfc65e1cda121eef42e5043f10e6bbb06315e16ee10
   languageName: node
   linkType: hard
 
