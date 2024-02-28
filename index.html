@@ -1,30 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <title>Tiny VR</title>
-    
-    <base href="/" />
-    
-    <meta name="color-scheme" content="light dark" />
-    <meta
-      name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    <title>Tiny VR Video Player</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/apple-touch-icon.png"
     />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    
-    <link rel="manifest" href="/manifest.json" />
-    
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
-    
-    <!-- add to homescreen for ios -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Tiny VR" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/image/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/image/safari-pinned-tab.svg"
+      color="#141e30"
+    />
+    <meta name="apple-mobile-web-app-title" content="TinyVR" />
+    <meta name="application-name" content="TinyVR" />
+    <meta name="msapplication-TileColor" content="#141e30" />
+    <meta name="theme-color" content="#141e30" />
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="input_container" class="dynamic_background">
+      <input id="file_selector" type="file" accept="video/*" />
+      <div id="button_container">
+        <p><img src="/image/button.svg" alt="Click to open" /></p>
+        <p id="tap_to_open">Tap to open a video</p>
+      </div>
+    </div>
+    <div id="file_loading" class="dynamic_background">
+      <div class="lds-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div id="main_player">
+      <div id="canvas_container">
+        <canvas id="stage" />
+      </div>
+      <div id="video_container">
+        <video id="video"></video>
+      </div>
+      <div id="top_bar">
+        <button id="back" title="back">
+          <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+            />
+          </svg>
+        </button>
+        <div id="settings-panel">
+          <div>
+            <label for="css">
+              <span>Scale</span>
+              <input
+                type="range"
+                id="scale"
+                min="1"
+                max="100"
+                value="100"
+                step="1"
+              />
+            </label>
+          </div>
+          <div>
+            <label for="css">
+              <span>Distance</span>
+              <input
+                type="range"
+                id="distance"
+                min="0"
+                max="100"
+                value="0"
+                step="1"
+              />
+            </label>
+          </div>
+          <div>
+            <label for="css">
+              <span>Filling</span>
+              <select id="scale_mode">
+                <option value="contain">Fit</option>
+                <option value="cover">Crop</option>
+                <option value="fill">Stretch</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div>
+          <button id="settings"><img src="/image/settings.svg" /></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.ts" type="module"></script>
   </body>
 </html>

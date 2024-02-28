@@ -1,0 +1,20 @@
+{
+    "name": "TinyVR",
+    "short_name": "TinyVR",
+    "start_url": "/",
+    "description": "A video player for traditional VR headsets.",
+    "icons": [
+        {
+            "src": "./image/large-icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#141e30",
+    "background_color": "#141e30",
+    "display": "fullscreen",
+    "orientation": "landscape",
+    "dir": "auto",
+    "lang": "en",
+    "scope": "/"
+  }
