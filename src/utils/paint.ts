@@ -6,11 +6,10 @@ let paintMode: string = localStorage.getItem("paintMode") || "contain";
 let scale = localScale ? Number.parseFloat(localScale) : 100;
 let distance = localDistance ? Number.parseFloat(localDistance) : 0;
 
-const paintFill = (ctx: CanvasRenderingContext2D) => {
+const paintFill = ($video: HTMLVideoElement, ctx: CanvasRenderingContext2D) => {
     const paintOffset = window.innerWidth * (distance / 100);
     const scaleConfig = scale / 100;
-    // @ts-ignore
-    const $video = controller.media;
+    
     const $canvas = ctx.canvas;
 
     const cw = $canvas.width;
@@ -34,11 +33,12 @@ const paintFill = (ctx: CanvasRenderingContext2D) => {
     );
 };
 
-const paintContain = (ctx: CanvasRenderingContext2D) => {
+export const randomColor = () => '#' + Math.floor(Math.random()*16777215).toString(16);
+
+const paintContain = ($video: HTMLVideoElement, ctx: CanvasRenderingContext2D) => {
     const paintOffset = window.innerWidth * (distance / 100);
     const scaleConfig = scale / 100;
-    // @ts-ignore
-    const $video = controller.media;
+    
     const $canvas = ctx.canvas;
 
     const cw = $canvas.width;
@@ -64,12 +64,12 @@ const paintContain = (ctx: CanvasRenderingContext2D) => {
     ctx.drawImage($video, cw / 2 + paintOffset, y, pw, ph);
 };
 
-const paintCover = (ctx: CanvasRenderingContext2D) => {
+const paintCover = ($video: HTMLVideoElement, ctx: CanvasRenderingContext2D) => {
     const scaleConfig = scale / 100;
     const paintOffset = window.innerWidth * (distance / 100);
 
     // @ts-ignore
-    const $video = controller.media;
+    
     const $canvas = ctx.canvas;
 
     const cw = $canvas.width;
@@ -119,19 +119,19 @@ const paintCover = (ctx: CanvasRenderingContext2D) => {
     );
 };
 
-export const paint = (ctx: CanvasRenderingContext2D) => {
+export const paint = ($video: HTMLVideoElement, ctx: CanvasRenderingContext2D) => {
     const $canvas = ctx.canvas;
 
     ctx.clearRect(0, 0, $canvas.width, $canvas.height);
 
     switch (paintMode) {
         case "contain":
-            paintContain(ctx);
+            paintContain($video, ctx);
             break;
         case "cover":
-            paintCover(ctx);
+            paintCover($video, ctx);
             break;
         case "fill":
-            paintFill(ctx);
+            paintFill($video, ctx);
     }
 };
